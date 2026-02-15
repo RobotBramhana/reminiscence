@@ -1,0 +1,4 @@
+<resources>
+<string name="app_name">Reminiscence</string>
+<string name="offline">Offline. Waiting for connection...</string>
+</resources>

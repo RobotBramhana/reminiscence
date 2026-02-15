@@ -1,0 +1,11 @@
+<resources>
+
+<style name="Theme.Reminiscence" parent="Theme.Material3.Dark.NoActionBar">
+
+    <item name="android:windowFullscreen">true</item>
+
+    <item name="android:windowSplashScreenBackground">@color/splash_bg</item>
+
+</style>
+
+</resources>
