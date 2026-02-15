@@ -1,5 +1,4 @@
 <resources>
-
-<color name="splash_bg">#000000</color>
-
+    <color name="icon_bg">#4A1F24</color> <!-- Deep burgundy leather -->
 </resources>
+
