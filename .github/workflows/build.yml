@@ -26,19 +26,9 @@ jobs:
 
       - name: Build app
         run: gradle assembleDebug
-        
-      - name: Rename APK to reminiscence.apk 
-        run: cp app/build/outputs/apk/debug/app-debug.apk reminiscence.apk
-      
-      - name: Generate release version 
-        id: version 
-        run: echo "version=v$(date +'%Y.%m.%d.%H%M')" >> $GITHUB_OUTPUT 
-        
-      - name: Create GitHub Release and Upload APK 
-        uses: softprops/action-gh-release@v2 
-        with: 
-          tag_name: ${{ steps.version.outputs.version }} 
-          name: Reminiscence ${{ steps.version.outputs.version }} 
-          files: reminiscence.apk 
-        env: 
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: reminiscence-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
