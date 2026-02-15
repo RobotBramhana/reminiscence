@@ -1,4 +1,4 @@
-package com.example.reminiscence
+package com.robotbramhana.reminiscence
 
 import android.annotation.SuppressLint
 import android.content.Context

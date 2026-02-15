@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sudhanva.reminiscence"
+    namespace = "com.robotbramhana.reminiscence"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.sudhanva.reminiscence"
+        applicationId = "com.robotbramhana.reminiscence"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
